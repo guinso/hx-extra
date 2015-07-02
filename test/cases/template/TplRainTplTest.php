@@ -4,7 +4,7 @@ class TplRainTplTest extends PHPUnit_Framework_TestCase {
 	public function testTransform()
 	{
 		$adaptor = new \HxExtra\Template\Engine\RainTpl(
-			__DIR__ . DIRECTORY_SEPARATOR . 'cache', true);
+			__DIR__ . DIRECTORY_SEPARATOR . 'cache' . DIRECTORY_SEPARATOR, true);
 		
 		$output = $adaptor->transform(
 			array('data' => array(
