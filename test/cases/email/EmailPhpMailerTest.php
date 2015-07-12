@@ -3,13 +3,15 @@ class EmailPhpMailerTest extends PHPUnit_Framework_TestCase {
 	
 	public function testSend()
 	{
-		$host = 'mail.abc.com';
+		$domainName = 'abc.com';
 		
-		$emailAddress = 'it@abc.com';
+		$host = 'mail.' . $domainName;
+		
+		$emailAddress = 'it@' . $domainName;
 		
 		$displayName = 'HxExtra UnitTest';
 		
-		$username = 'it@abc.com';
+		$username = 'it@' . $domainName;
 		
 		$password = '123456789';
 		
